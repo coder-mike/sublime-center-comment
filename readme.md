@@ -4,7 +4,10 @@ A plugin for Sublime Text to center C/C++ style comments such this:
 
     // ----------------------------- Section Here -----------------------------
 
-This also works for C-like languages such as C#, Java, and JavaScript.
+
+This is particularly useful for headings and sections in code.
+
+It also works for C-like languages such as C#, Java, and JavaScript.
 
 
 ## Installation
@@ -25,22 +28,22 @@ Here are some examples, showing first the line on which the command was executed
     // ---------------------------------Dashes---------------------------------
 
     // - Extra Space
-    // ----------------------------- Extra Space -----------------------------
+    // ----------------------------- Extra Space ------------------------------
 
     //-No space
-    //--------------------------------No space--------------------------------
+    //--------------------------------No space---------------------------------
 
     // = Equals
     // ================================ Equals ================================
 
     // * Asterisks
-    // ****************************** Asterisks ******************************
+    // ****************************** Asterisks *******************************
 
     // -
     // ------------------------------------------------------------------------
 
     // = Multi -- Part
-    // ============================ Multi -- Part ============================
+    // ============================ Multi -- Part =============================
 
     /* - C Style */
     /* ------------------------------ C Style ------------------------------ */

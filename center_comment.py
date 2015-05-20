@@ -15,7 +15,7 @@ class CenterCommentCommand(sublime_plugin.TextCommand):
                     m = re.match(r'^(.*?)(/\*+)(\s?)\s*([-=*]*)\s*?(\s?)(\w.*?)?([ -=*]*?)([ ]?)(\*/)$', text)
 
                 if m:
-                    print(m.groups())
+                    # print(m.groups())
                     titleText = m.group(6)
                     if not titleText:
                         titleText = ''
@@ -38,11 +38,15 @@ class CenterCommentCommand(sublime_plugin.TextCommand):
                         wrapWidth = 80
                     wrapWidth -= 1
 
-                    numToAdd = int((wrapWidth - lengthExclPad) / 2)
+                    padsNeeded = wrapWidth - lengthExclPad
+                    numToAdd = int(padsNeeded / 2)
                     if numToAdd < 0:
                         numToAdd = 0
+                        numToAdd2 = 0
+                    else:
+                        numToAdd2 = padsNeeded - numToAdd
 
-                    newText = m.group(1) + m.group(2) + m.group(3) + (padChar * numToAdd) + titleSpace + titleText + titleSpace + (padChar * numToAdd) + trailingSpace + trailingCommentMark
+                    newText = m.group(1) + m.group(2) + m.group(3) + (padChar * numToAdd) + titleSpace + titleText + titleSpace + (padChar * numToAdd2) + trailingSpace + trailingCommentMark
 
                     # Remove trailing spaces, for the case that the padding char is itself a space
                     newText = re.sub(r'\s+$', '', newText)
