@@ -7,6 +7,11 @@ A plugin for Sublime Text to center C/C++ style comments such this:
 This also works for C-like languages such as C#, Java, and JavaScript.
 
 
+## Installation
+
+Install use the Sublime Text package manager.
+
+
 ## Usage
 
 The default shortcut key is `ctrl+shift+c` or `super+shift+c`, and will center commented text on lines under the current cursor(s).
