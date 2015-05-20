@@ -9,7 +9,7 @@ This also works for C-like languages such as C#, Java, and JavaScript.
 
 ## Installation
 
-Install use the Sublime Text package manager.
+To install use Sublime Text Package Control.
 
 
 ## Usage
