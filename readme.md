@@ -1,13 +1,11 @@
 # Sublime Center Comment
 
-A plugin for Sublime Text to center C/C++ style comments such this:
+A plugin for Sublime Text to center comments such this:
 
     // ----------------------------- Section Here -----------------------------
 
 
 This is particularly useful for headings and sections in code.
-
-It also works for C-like languages such as C#, Java, and JavaScript.
 
 
 ## Installation
@@ -19,34 +17,34 @@ To install use Sublime Text Package Control.
 
 The default shortcut key is `ctrl+shift+c` or `super+shift+c`, and will center commented text on lines under the current cursor(s).
 
-Here are some examples, showing first the line on which the command was executed, and then the result:
+Here are some examples in a C-like language such as C#, Java, and JavaScript, but this should work for other languages as well. Each example shows what it looks like before and after using the command:
 
     // Padded with spaces
     //                            Padded with spaces
 
     // -Dashes
-    // ---------------------------------Dashes---------------------------------
+    // --------------------------------Dashes---------------------------------
 
     // - Extra Space
-    // ----------------------------- Extra Space ------------------------------
+    // ----------------------------- Extra Space -----------------------------
 
     //-No space
-    //--------------------------------No space---------------------------------
+    //--------------------------------No space--------------------------------
 
     // = Equals
-    // ================================ Equals ================================
+    // =============================== Equals ================================
 
     // * Asterisks
-    // ****************************** Asterisks *******************************
+    // ****************************** Asterisks ******************************
 
     // -
-    // ------------------------------------------------------------------------
+    // -----------------------------------------------------------------------
 
     // = Multi -- Part
-    // ============================ Multi -- Part =============================
+    // ============================ Multi -- Part ============================
 
-    /* - C Style */
-    /* ------------------------------ C Style ------------------------------ */
+    /* - Single-line block comment */
+    /* -------------------- Single-line block comment --------------------- */
 
 
 

@@ -1,0 +1,5 @@
+{
+    // The line width in columns to use for wrapping. The default is to fall
+    // back to the wrap_width
+    "line_width" : "wrap_width"
+}
