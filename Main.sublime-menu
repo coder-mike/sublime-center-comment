@@ -1,0 +1,37 @@
+[
+	{
+		"caption": "Preferences",
+		"mnemonic": "n",
+		"id": "preferences",
+		"children":
+		[
+			{
+				"caption": "Package Settings",
+				"mnemonic": "P",
+				"id": "package-settings",
+				"children":
+				[
+					{
+						"caption": "Center Comment",
+						"children":
+						[
+							{
+								"command": "open_file",
+								"caption": "Settings - Default",
+								"args": { "file": "${packages}/Center Comment/center_comment.sublime-settings" }
+							},
+							{
+								"command": "open_file",
+								"caption": "Settings - User",
+								"args": { "file": "${packages}/User/center_comment.sublime-settings", "contents": "{\n\t$0\n}\n" }
+							},
+							{
+								"caption": "-"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
