@@ -1,6 +1,6 @@
 # Sublime Center Comment
 
-A plugin for Sublime Text to center comments such this:
+A plugin for Sublime Text to center comments like this:
 
     // ----------------------------- Section Here -----------------------------
 
@@ -10,7 +10,7 @@ This is particularly useful for headings and sections in code.
 
 ## Installation
 
-To install use Sublime Text Package Control.
+To install use Sublime Text [Package Control](https://sublime.wbond.net/).
 
 
 ## Usage
