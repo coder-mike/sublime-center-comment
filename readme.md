@@ -1,4 +1,4 @@
-# Center Comment
+# Sublime Center Comment
 
 A plugin for Sublime Text to center comments like this:
 
