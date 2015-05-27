@@ -51,14 +51,14 @@ class CenterCommentCommand(sublime_plugin.TextCommand):
                 # Line comments
                 m = None
                 for line_comment in line_comments:
-                    m = re.match(r'^(.*?)' + '(' + re.escape(line_comment[0]) + ')' + r'(\s?)\s*([-=*]*)\s*?(\s?)(\w.*?)?([ -=*]*?)([ ]?)()$', text)
+                    m = re.match(r'^(.*?)' + '(' + re.escape(line_comment[0]) + ')' + r'(\s?)\s*([\-=*]*)\s*?(\s?)(\w.*?)?([ \-=*]*?)([ ]?)()$', text)
                     if m:
                         break
 
                 # Single-line block comments
                 if not m:
                     for block_comment in block_comments:
-                        restr = r'^(.*?)' + '(' + re.escape(block_comment[0]) + ')' + r'(\s?)\s*([-=*]*)\s*?(\s?)(\w.*?)?([ -=*]*?)([ ]?)' + '(' + re.escape(block_comment[1]) + ')' + r'$'
+                        restr = r'^(.*?)' + '(' + re.escape(block_comment[0]) + ')' + r'(\s?)\s*([\-=*]*)\s*?(\s?)(\w.*?)?([ \-=*]*?)([ ]?)' + '(' + re.escape(block_comment[1]) + ')' + r'$'
                         # print(repr(restr))
                         m = re.match(restr, text)
                         if m:
